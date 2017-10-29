@@ -5,3 +5,4 @@ Debug/
 *.VC.*
 *.sln
 *_win.*
+build/
