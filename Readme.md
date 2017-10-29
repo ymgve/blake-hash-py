@@ -3,7 +3,7 @@
 Python C module for Decred hashing 
 ----------------------------------
 
-Notes for Zcoin:
+Notes for Decred:
 ----------------
 
 Module: blake_hash
