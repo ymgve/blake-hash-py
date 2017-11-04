@@ -24,7 +24,7 @@ Windows (mingw):
 * Install MinGW: http://www.mingw.org/wiki/Getting_Started
 * Install Python 2.7: http://www.python.org/getit/
 
-In cmd type this:
+In mingw bash type this:
 
     C:\Python27\python.exe setup.py build --compile=mingw32 install
 
