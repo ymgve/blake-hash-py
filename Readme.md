@@ -19,6 +19,8 @@ Linux:
 
     sudo python setup.py install
 
+    - tested
+
 
 Windows (mingw):
 * Install MinGW: http://www.mingw.org/wiki/Getting_Started
@@ -29,6 +31,7 @@ In mingw bash type this:
     C:\Python27\python.exe setup.py build --compile=mingw32 install
 
     - untested
+
 
 	
 Windows (microsoft visual c/c++)
