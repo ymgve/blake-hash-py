@@ -35,13 +35,13 @@
 #include "sph_blake.h"
 
 
-void blake256_hash(const char* input, char* output)
+void blake256_hash(const char* input, int inputsize, char* output)
 {
     sph_blake256_context	ctx_blake;
     uint32_t				hash[16];
 
     sph_blake256_init(&ctx_blake);
-    sph_blake256 (&ctx_blake, input, DECRED_MAX_LEN);
+    sph_blake256 (&ctx_blake, input, inputsize);
     sph_blake256_close (&ctx_blake, hash);
 
     memcpy(output, hash, HASHED_OUTPUT_LEN);

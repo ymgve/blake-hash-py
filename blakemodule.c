@@ -17,9 +17,9 @@ static PyObject *blake_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    blake256_hash((char *)PyBytes_AsString((PyObject*) input), output);
+    blake256_hash((char *)PyBytes_AsString((PyObject*) input), PyBytes_Size((PyObject*) input), output);
 #else
-    blake256_hash((char *)PyString_AsString((PyObject*) input), output);
+    blake256_hash((char *)PyString_AsString((PyObject*) input), PyString_Size((PyObject*) input), output);
 #endif
     Py_DECREF(input);
 #if PY_MAJOR_VERSION >= 3
